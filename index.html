@@ -48,6 +48,10 @@
 					<p>
 						<small>Created by <a href="http://jaredthenerd.com">Jared Faris</a> / <a href="http://twitter.com/jaredthenerd">@jaredthenerd</a></small>
 					</p>
+					
+					<aside class="notes">
+                        Brief intro. Who I am
+					</aside>
 				</section>
 
 				<section>
@@ -73,6 +77,8 @@
 
                     <aside class="notes">
                         <ul>
+                        	<li>The web became popular because it helped solve some tough deployment problems</li>
+                        	<li>not because it was great for UX</li>
                             <li>Modern JavaScript frameworks and the evolving HTML/CSS standards have made it possible to build rich UIs and use patterns (like MVVM)</li>
                         </ul>
                     </aside>
@@ -91,9 +97,134 @@
                     </aside>
                 </section>
 
+                <section>
+                    <h2>Someone Moved Your Cheese</h2>
+                    <p>
+                        TODO
+                    </p>
 
+                    <aside class="notes">
+                        <ul>
+                            <li>The development tools that traditionally got the job done aren't always sufficient now</li>
+                            <li>All of the things you've had to do on the server side have client-side counterparts now. Debugging, profiling, tuning, etc</li>
+                        </ul>
+                    </aside>
+                </section>
 
+                <section>
+                    <h2>Today's Topics</h2>
+                    <p>
+                        <ul>
+                        	<li>HTML Inspection</li>
+                        	<li>CSS Modifications</li>
+                        	<li>JavaScript Debugging</li>
+                        	<li>Mobile/Responsive tools</li>
+                        	<li>Performance Tuning</li>
+                        </ul>
+                    </p>
 
+                    <aside class="notes">
+                        <ul>
+                            <li>This is mostly a tools talk. I'll be trying to provide tactical things you can take away and use tomorrow.</li>
+                            <li>Hopefully you'll walk away with at least 1 "Holy crap I can do that" items that make it worth sitting through this talk</li>
+                        </ul>
+                    </aside>
+                </section>
+                
+                <section>
+                	<h1>HTML Inspection</h1>
+                	
+                	<aside class="notes">
+                		<ul>
+                			<li>This is the section you're probably most familiar with if you write HTML/CSS</li>
+                			<li>Hopefully there are still a few tips I can provide you with that add value</li>
+                		</ul>
+                	</aside>
+                </section>
+            
+            
+        
+            	<!-- Disable Caching -->
+                <section>
+                	<section>
+						<h1>Disable Caching</h1>
+					
+						<aside class="notes">
+							<ul>
+								<li>If you are doing any serious debugging on the client side, cache can be killer</li>
+								<li>There is nothing worse than spending an hour trying to solve a problem that <b>should not be possible</b> with your current app, just to realize you aren't looking at your current app.</li>
+							</ul>
+						</aside>
+                	</section>
+                	
+                	<!--<section>
+                		<h2>Chrome</h2>
+                	</section>-->
+                	
+                	<section>
+                		<!--Chrome-->
+                		<h2>Hit F12. Hit F1</h2>
+                			<img src="images/HTML/Disable Caching/chrome.png">
+                	</section>
+                	
+                	<!--<section>
+                		<h2>Firefox</h2>
+                	</section>-->
+                	
+                	<section>
+                		<!--Firefox-->
+                		<h2>Hit the gear. Advanced Settings</h2>
+                			<img src="images/HTML/Disable Caching/firefox.png">
+                	</section>   
+                	
+					<!--<section>
+                		<h2>Internet Explorer</h2>
+                	</section>-->   
+                	     
+                	<section>     	
+                		<!--IE-->
+                		<h2>IE TODO</h2>
+                			<img src="images/HTML/Disable Caching/ie.png">
+                	</section>                 	          	
+                </section>       
+                
+                
+                
+                <!-- Tweaking designs in browser -->
+                <section>
+                	<section>
+                		<h2>Hitting Refresh Sucks</h2>
+                		
+						<aside class="notes">
+							<ul>
+								<li>Halfway through a workflow, style change, refresh, back at the start</li>
+								<li>Learn to use the inspector to make changes on the fly</li>
+								<li>Alternatively, design all your html/css before you build behavior. Have the relevant HTML render at page load</li>
+							</ul>
+						</aside>
+                	</section>
+                	
+                	<section>
+                		<h2>Important application screen</h2>
+                	
+                		<!-- inline styles are not a best practice! -->
+                		<style type="text/css">
+                		
+                		</style>
+                	
+                		<div class="example1ParentContainer">
+                			<div class="example1ChildContainer1">
+                				Stuff
+                			</div>
+                			<div class="example1ChildContainer2">
+                				More Stuff
+                			</div>
+                		</div>
+                	
+                	</section>
+                </section>
+                
+                
 
                 <!-- Example of nested vertical slides -->
 				<section>
