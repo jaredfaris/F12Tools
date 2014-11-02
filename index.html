@@ -34,6 +34,12 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+		
+		<style>
+			img.screenshot1024 {
+				width: 75%;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -164,7 +170,7 @@
                 	<section>
                 		<!--Chrome-->
                 		<h2>Hit F12. Hit F1</h2>
-                			<img src="images/HTML/Disable Caching/chrome.png">
+                			<img src="images/HTML/Disable Caching/chrome.png" class="screenshot1024">
                 	</section>
                 	
                 	<!--<section>
@@ -174,7 +180,7 @@
                 	<section>
                 		<!--Firefox-->
                 		<h2>Hit the gear. Advanced Settings</h2>
-                			<img src="images/HTML/Disable Caching/firefox.png">
+                			<img src="images/HTML/Disable Caching/firefox.png" class="screenshot1024">
                 	</section>   
                 	
 					<!--<section>
@@ -184,7 +190,7 @@
                 	<section>     	
                 		<!--IE-->
                 		<h2>IE TODO</h2>
-                			<img src="images/HTML/Disable Caching/ie.png">
+                			<img src="images/HTML/Disable Caching/ie.png" class="screenshot1024">
                 	</section>                 	          	
                 </section>       
                 
@@ -193,7 +199,7 @@
                 <!-- Tweaking designs in browser -->
                 <section>
                 	<section>
-                		<h2>Hitting Refresh Sucks</h2>
+                		<h1>Hitting Refresh Sucks</h1>
                 		
 						<aside class="notes">
 							<ul>
@@ -205,14 +211,40 @@
                 	</section>
                 	
                 	<section>
-                		<h2>Important application screen</h2>
-                	
-                		<!-- inline styles are not a best practice! -->
-                		<style type="text/css">
+                		<h2>General CSS Tweaking</h2>
                 		
+                		<q>
+                			Oh no, the design of this page isn't quite right. It should be two column!"
+                		</q> - Designer
+                		               	
+                		<!-- inline style blocks are not a best practice! -->
+                		<style>
+                			#example1ParentContainer { 
+                				margin-top: 10%;
+                				background-color: #eeeeee;
+                				color: #333333;	
+                				text-align: left;
+                				font-size: 0;
+                			}
+                			
+                			#example1ParentContainer div {
+                				padding: 10px;
+                				display: inline-block;
+                				font-size: 25px;
+                				/* box-sizing: border-box; */
+                			}
+                			
+                			#example1ParentContainer .example1ChildContainer1 {
+                				width: 75%;
+                				background-color: #666666;
+                			}
+                			
+							#example1ParentContainer .example1ChildContainer2 {
+                				width: 25%;
+                			}
                 		</style>
                 	
-                		<div class="example1ParentContainer">
+                		<div id="example1ParentContainer">
                 			<div class="example1ChildContainer1">
                 				Stuff
                 			</div>
@@ -221,10 +253,140 @@
                 			</div>
                 		</div>
                 	
+						<aside class="notes">
+							<ul>
+								<li>Demo changing the box-sizing.</li>
+								<li>Then demo and explain computed/box model/etc</li>
+								<li></li>
+							</ul>
+						</aside>                	
                 	</section>
+                	              	
+                	<section>
+                		<!--Chrome-->
+                		<h2>(Chrome) Styles</h2>
+                		<img src="images/HTML/Basic Tweaking/Chrome CSS Change.png" class="screenshot1024">
+                	</section>
+                	
+                	<section>
+                		<!--Firefox-->
+                		<h2>(Firefox) Rules</h2>
+                		<img src="images/HTML/Basic Tweaking/Firefox CSS Change.png" class="screenshot1024">
+                	</section>
+                	
+                	<section>
+                		<!--IE-->
+                		<h2>(IE) TODO</h2>
+                		<img src="images/HTML/Basic Tweaking/IE CSS Change.png" class="screenshot1024">
+                	</section>                    	
+                	
+                	<section>
+                		<h1>What's this computed thing?</h1>
+                	</section>
+                	
+                	<section>
+                		<h2>Inherited Styles</h2>
+                		
+                		<img src="images/HTML/Inherited Styles/Chrome Box Sizing.png">
+                		
+                		<aside class="notes">
+							<ul>
+								<li>Each browser has a quick way of looking at the box model sizes</li>
+								<li>They also have a way to let you view the styles you haven't explicitly set</li>
+								<li>For each style, you can figure out where it's coming from</li>
+							</ul>
+						</aside> 
+                	</section>
+                	
+                	<section>
+                		<h2>Inherited Styles 2</h2>
+                		
+                		<img src="images/HTML/Inherited Styles/Chrome Computed.png">
+                	</section>                	
+                </section>
+                
+                <!-- Psuedo States -->
+                <style>
+                	#example2HoverState:hover {
+                		color: green;
+                	}
+                </style>
+                <section>
+                	<section>
+                		<h1 id="example2HoverState">Messing With Hovers</h1>
+                		
+                		<p>IE and Chrome</p>
+                	</section>
+                	
+                	<section>
+                		<h2>(Chrome) Toggle Element State</h2>
+                	
+                		<img src="images/HTML/Pseudo States/Chrome Toggle State.png">
+                	</section>
+
+                	<section>
+                		<h2>(IE) Toggle Element State</h2>
+                		<p>TODO</p>
+                		<img src="images/HTML/Psuedo States/IE Toggle State.png">
+                	</section>
+
+                
                 </section>
                 
                 
+                <!-- What changes did I make? -->
+                <section>
+                	<section>
+                		<h1>So What Changes Did I Make Again?</h1>
+                	</section>
+                
+                	<section>
+                		<h2>Previous Demo</h2>
+                		
+                		<p>Firefox and IE</p>
+                		
+                		<div id="example1ParentContainer">
+                			<div class="example1ChildContainer1">
+                				Stuff
+                			</div>
+                			<div class="example1ChildContainer2">
+                				More Stuff
+                			</div>
+                		</div>     
+                	</section>     
+                	
+                	<section>
+                		<h2>Firefox</h2>
+                		<p>Look for the green bar</p>
+                		
+                		<img src="images/HTML/My Changes/Firefox.png">                		
+                	</section> 
+                	
+                	<section>
+                		<h2>IE</h2>
+                		<p>TODO Look for the green bar</p>
+                		
+                		<img src="images/HTML/My Changes/IE.png">                		
+                	</section>
+                	
+                	<section>
+                		<h2>IE even better</h2>
+                		<p>TODO Changes Tab!</p>
+                		
+                		<img src="images/HTML/My Changes/IE Changes Tab.png">                		
+                	</section>                             	                 	     
+                </section>
+                
+
+
+
+
+
+
+
+
+
+
 
                 <!-- Example of nested vertical slides -->
 				<section>
