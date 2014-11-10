@@ -30,11 +30,12 @@
 				document.getElementsByTagName( 'head' )[0].appendChild( link );
 			}
 		</script>
+		
+		<script src="lib/js/jquery-1.11.0.min.js"></script>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-		
+		<![endif]-->		
 		<style>
 			img.screenshot1024 {
 				width: 75%;
@@ -374,20 +375,21 @@
 					<section>
 						<h2>(Firefox) States
 						
-                		<img src="images/HTML/Pseudo States/Firefox Toggle State.png">
+                		<img src="images/HTML/Pseudo States/Firefox Toggle State.png" class="screenshot1024">
 					</section>
 
                 	<section>
                 		<h2>(IE) Toggle Element State</h2>
                 		<p>TODO</p>
-                		<img src="images/HTML/Psuedo States/IE Toggle State.png">
+                		<img src="images/HTML/Psuedo States/IE Toggle State.png" class="screenshot1024">
                 	</section>
                 </section>
                 
                 <!-- What changes did I make? -->
                 <section>
                 	<section>
-                		<h1>So What Changes Did I Make Again?</h1>
+                		<h2>So What Changes Did I Make Again?</h2>
+                		Firefox and IE will highlight your changes
                 	</section>
                 
                 	<section>
@@ -442,17 +444,52 @@
 
 
 				<!-- JavaScript Debugging -->
+				<section>
+					<h1>JavaScript Debugging</h1>
+				</section>
+				<!-- Debugger keyword -->
+				<section>
+					<section>
+						<h2>Debugger</h2>
+					
+						Supported in all modern browsers. Code based breakpoint.
+					</section>
+					<style>
+						#example3Button {
+							font-size: 1.5em;
+						};
+					</style>
+					<section>
+						<h2>Example!</h2>
+						<button id="example3Button">Fire Event!</button>
+					</section>
+					<script>
+						// yay for inline javascript too
+						$(document).on('click', "#example3Button", function () { 
+							// you can add a debugger breakpoint anywhere
+							debugger
+							
+							// very useful if you're trying to debug a callback
+							setTimeout(function() {
+								debugger;
+							}, 2000);
+						});					
+					</script>
+				</section>
+				<!-- Differences in the consoles -->
+					<!-- Viewing objects -->
+				<!-- Callstack -->
+					<!-- walking up and down the callstack -->
+				<!-- Breaking modes -->
+				<!-- Just my code (black boxing) -->
+				<!-- Deminifying because sometimes  you do need to look at their code -->
+				<!-- Find events on element -->
+				<!-- Sourcemaps. Point out which browser had these first (IE) -->
 				
 				<!-- Mobile/Responsive Tools -->
 				
 				<!-- Performance Tuning -->
-				
-
-
-
-
-
-
+				<!-- see examples: CloudDevelopJavaScriptResizing -->
                 <!-- Example of nested vertical slides -->
 				<section>
 					<section>
