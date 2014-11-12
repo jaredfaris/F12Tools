@@ -6,8 +6,8 @@
 
 		<title>F12 Tools</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="A talk about debugging the web">
+		<meta name="author" content="Jared Faris">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -182,7 +182,29 @@
                 			<img src="images/HTML/Disable Caching/ie.png" class="screenshot1024">
                 	</section>                 	          	
                 </section>                    
-                
+
+				<section>
+					<section>
+						<h1>IE You Said?</h1>
+					</section>
+					<section>
+						<h2>IE Market Share</h2>
+
+							<img src="images/browser%20market%20share.png" class="stretch"">
+					</section>
+					<section>
+						<h2>But I Don't Run Windows</h2>
+
+						Check out <a href="https://remote.modern.ie/">Remote IE</a>
+					</section>
+
+					<aside class="notes">
+						I haven't tested this yet, but a tool like Ngrok (https://ngrok.com/) should make it possible to access local resources from the web.
+
+						Their site says this isn't in the preview leading me to believe it's on the roadmap.
+					</aside>
+				</section>
+
                 <section>
                 	<h1>HTML Inspection</h1>
                 	
@@ -477,7 +499,44 @@
 					</script>
 				</section>
 				<!-- Differences in the consoles -->
-					<!-- Viewing objects -->
+				<!-- Viewing objects -->
+				<section>
+					<section>
+						<h2>Consoles</h2>
+						Run arbitrary javascript, debug it and view objects!
+					</section>
+					<section>
+						<!-- Chrome -->
+						<h2>Chrome</h2>
+
+						<img src="images/JavaScript/Console/Chrome Console.png" class="screenshot1024">
+
+						<aside class="notes">
+							You can hit escape anywhere in Chrome to bring up a smaller console too.
+						</aside>
+					</section>
+					<section>
+						<!-- Firefox -->
+						<h2>Firefox</h2>
+
+						<img src="images/JavaScript/Console/Firefox%20Console.png" class="screenshot1024">
+
+						<aside class="notes">
+							Escape works in Firefox too. Notice how Firefox makes you use a pain to inspect objects.
+						</aside>
+					</section>
+					<section>
+						<!-- IE -->
+						<h2>IE TODO</h2>
+
+						<!--<img src="images/JavaScript/Console/Firefox%20Console.png" class="screenshot1024">-->
+
+						<aside class="notes">
+							TODO
+						</aside>
+					</section>
+				</section>
+
 				<!-- Callstack -->
 					<!-- walking up and down the callstack -->
 				<!-- Breaking modes -->
@@ -489,7 +548,9 @@
 				<!-- Mobile/Responsive Tools -->
 				
 				<!-- Performance Tuning -->
-				<!-- see examples: CloudDevelopJavaScriptResizing -->
+				<!-- read: https://developer.chrome.com/devtools/docs/timeline -->
+				<!-- see examples: http://clouddevelopconferenceslow.azurewebsites.net/ -->
+				<!-- screenshots: Chrome Timeline Callstack.png, Chrome Timeline Tool.png -->
                 <!-- Example of nested vertical slides -->
 				<section>
 					<section>
