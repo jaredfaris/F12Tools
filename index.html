@@ -481,7 +481,7 @@
 						Supported in all modern browsers. Code based breakpoint.
 					</section>
 					<style>
-						#example3Button {
+						#example3Button, #example4Button {
 							font-size: 1.5em;
 						};
 					</style>
@@ -545,13 +545,73 @@
 
 					<!-- walking up and down the callstack -->
 					<section>
-						<h2>Demo</h2>
+						<h2>Callstack Demo</h2>
+
+						<button id="example4Button">Fire Event!</button>
 					</section>
 
+					<script>
+						var method1 = function() {
+							debugger;
+						};
+
+						var method2 = function() {
+							method1();
+						};
+
+						var method3 = function() {
+							method2();
+						};
+
+						$(document).on('click', '#example4Button', method3);
+
+					</script>
+
+					<section>
+						<h2>Chrome Callstack</h2>
+
+						<img src="images/JavaScript/Callstack/Chrome%20Callstack.png" class="screenshot1024">
+					</section>
+
+					<section>
+						<h2>Firefox Callstack</h2>
+
+						<img src="images/JavaScript/Callstack/Firefox%20Callstack.png" class="screenshot1024">
+					</section>
+
+					<section>
+						<h2>Firefox... Callrow?</h2>
+
+						<img src="images/JavaScript/Callstack/Firefox%20Callrow.png" class="screenshot1024">
+					</section>
+
+					<section>
+						<h2>IE Callstack</h2>
+
+						<img src="images/JavaScript/Callstack/IE%20Callstack.png" class="screenshot1024">
+					</section>
 				</section>
+
 				<!-- Breaking modes -->
+				<section>
+					<section>
+						<h1>Breaking</h1>
+					</section>
+
+					<aside class="notes">
+						Breaking on exceptions makes sense when you're debuggin your code but it's annoying when you stop on library code.
+					</aside>
+				</section>
+
 				<!-- Just my code (black boxing) -->
+				<section>
+					<section>
+						<h1>Making Breaking Not Crap</h1>
+					</section>
+				</section>
+
 				<!-- Deminifying because sometimes  you do need to look at their code -->
+				
 				<!-- Find events on element -->
 				<!-- Sourcemaps. Point out which browser had these first (IE) -->
 				
