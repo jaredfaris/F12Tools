@@ -32,6 +32,7 @@
 		</script>
 		
 		<script src="lib/js/jquery-1.11.0.min.js"></script>
+		<script src="lib/js/awesome-library.js"></script>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -190,8 +191,9 @@
 					<section>
 						<h2>IE Market Share</h2>
 
-							<img src="images/browser%20market%20share.png" class="stretch">
+						<img src="images/browser%20market%20share.png" class="stretch">
 					</section>
+
 					<section>
 						<h2>But I Don't Run Windows</h2>
 
@@ -199,7 +201,7 @@
 					</section>
 
 					<section>
-						<h1>Ngrok</h1>
+						<h2>Ngrok</h2>
 
 						<img src="images/IE/ngrok-remoteie.png" class="screenshot1024">
 
@@ -481,13 +483,13 @@
 						Supported in all modern browsers. Code based breakpoint.
 					</section>
 					<style>
-						#example3Button, #example4Button {
+						.example-button {
 							font-size: 1.5em;
 						};
 					</style>
 					<section>
 						<h2>Example!</h2>
-						<button id="example3Button">Fire Event!</button>
+						<button id="example3Button" class="example-button">Fire Event!</button>
 					</section>
 					<script>
 						// yay for inline javascript too
@@ -547,7 +549,7 @@
 					<section>
 						<h2>Callstack Demo</h2>
 
-						<button id="example4Button">Fire Event!</button>
+						<button id="example4Button" class="example-button">Fire Event!</button>
 					</section>
 
 					<script>
@@ -599,18 +601,81 @@
 					</section>
 
 					<aside class="notes">
-						Breaking on exceptions makes sense when you're debuggin your code but it's annoying when you stop on library code.
+						All browsers support turning on or off breaking on exceptions with some amount of customization.
 					</aside>
 				</section>
 
 				<!-- Just my code (black boxing) -->
 				<section>
 					<section>
-						<h1>Making Breaking Not Crap</h1>
+						<h1>Just My Code</h1>
+					</section>
+					<section>
+						<h2>Just My Code/Blackboxing Demo!</h2>
+						<button id="example5Button" class="example-button">Fire Event!</button>
+					</section>
+					<section>
+						<h2>(Chrome) Blackboxing</h2>
+
+						<img src="images/JavaScript/Blackboxing/Chrome%20Blackboxing.png" class="screenshot1024">
+					</section>
+					<section>
+						<h2>(Firefox) Black Boxing</h2>
+
+						<img src="images/JavaScript/Blackboxing/Firefox%20Black%20Boxing.png" class="screenshot1024">
+					</section>
+					<section>
+						<h2>(IE) Just My Code</h2>
+
+						<img src="images/JavaScript/Blackboxing/IE%20Just%20My%20Code.png" class="screenshot1024">
+
+						<aside class="notes">
+							It's worth pointing out that IE had this first.
+						</aside>
 					</section>
 				</section>
+				<script>
+					// yay for inline javascript too
+					$(document).on('click', "#example5Button", function () {
+						// we want to debug this
+						var myTest = "Hi!";
+
+						debugger;
+
+						awesome.doAwesomeStuff(); // We don't want to debug this third party library
+
+						alert(myTest);
+					});
+				</script>
 
 				<!-- Deminifying because sometimes  you do need to look at their code -->
+				<section>
+					<section>
+						<h1>Magic Time</h1>
+					</section>
+
+					<section>
+						<h2>Let's open some minified code</h2>
+					</section>
+
+					<section>
+						<h2>(Chrome) {} Pretty Print</h2>
+
+						<img src="images/JavaScript/Curly%20Braces/Chrome%20Curly%20Braces.png" class="screenshot1024">
+					</section>
+
+					<section>
+						<h2>(Firefox) {} Prettify Source</h2>
+
+						<img src="images/JavaScript/Curly%20Braces/Firefox%20Curly%20Braces.png" class="screenshot1024">
+					</section>
+
+					<section>
+						<h2>(IE) {} Pretty Print</h2>
+
+						<img src="images/JavaScript/Curly%20Braces/IE%20Curly%20Braces.png" class="screenshot1024">
+					</section>
+				</section>
 
 				<!-- Find events on element -->
 				<!-- Sourcemaps. Point out which browser had these first (IE) -->
