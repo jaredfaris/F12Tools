@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/theme/f12.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -103,7 +103,7 @@
                 </section>
                 
             	<!-- Disable Caching -->
-                <section>
+                <section data-background="#33407E">
                 	<section>
                 		First things first
 						<h1>Disable Caching</h1>
@@ -174,7 +174,7 @@
 					</section>
 				</section>
 
-                <section>
+                <section data-background="#33407E">
                 	<h1>HTML Inspection</h1>
                 	
                 	<aside class="notes">
@@ -196,7 +196,7 @@
                 		</ul>
                 	</section>
                 	
-                	<section>
+                	<section data-background="#115F54">
                 		<ol>
                 			<li>1</li>
                 			<li>2</li>
@@ -221,7 +221,7 @@
                 </section>
                 
                 <!-- CSS Modificiations -->
-                <section>
+                <section data-background="#33407E">
                 	<h1>CSS Modifications</h1>
                 </section>
                 
@@ -245,7 +245,7 @@
 						</aside>
                 	</section>
                 	
-                	<section>
+                	<section data-background="#115F54">
                 		<h2>General CSS Tweaking</h2>
                 		
                 		<q>
@@ -383,7 +383,7 @@
                 		Firefox and IE will highlight your changes
                 	</section>
                 
-                	<section>
+                	<section data-background="#115F54">
                 		<h2>Previous Demo</h2>
                 		
                 		<p>Firefox and IE</p>
@@ -435,7 +435,7 @@
 
 
 				<!-- JavaScript Debugging -->
-				<section>
+				<section data-background="#33407E">
 					<h1>JavaScript Debugging</h1>
 				</section>
 				<!-- Debugger keyword -->
@@ -450,7 +450,7 @@
 							font-size: 1.5em;
 						};
 					</style>
-					<section>
+					<section data-background="#115F54">
 						<h2>Example!</h2>
 						<button id="example3Button" class="example-button">Fire Event!</button>
 					</section>
@@ -509,7 +509,7 @@
 					</section>
 
 					<!-- walking up and down the callstack -->
-					<section>
+					<section data-background="#115F54">
 						<h2>Callstack Demo</h2>
 
 						<button id="example4Button" class="example-button">Fire Event!</button>
@@ -573,7 +573,7 @@
 					<section>
 						<h1>Just My Code</h1>
 					</section>
-					<section>
+					<section data-background="#115F54">
 						<h2>Just My Code/Blackboxing Demo!</h2>
 						<button id="example5Button" class="example-button">Fire Event!</button>
 					</section>
@@ -617,7 +617,7 @@
 						<h1>Magic Time</h1>
 					</section>
 
-					<section>
+					<section data-background="#115F54">
 						<h2>Let's open some minified code</h2>
 					</section>
 
@@ -680,7 +680,7 @@
                         </pre>
                         More details <a href="http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-anatomy">here</a>
                     </section>
-                    <section>
+                    <section data-background="#115F54">
                         <h2>Example</h2>
                         <a href="http://fontdragr.com/">fontdragr.com</a>
                     </section>
@@ -712,7 +712,7 @@
                     </section>
                 </section>
 
-                <section>
+                <section data-background="#33407E">
                     <section>
                         <h1>Responsive/Mobile Tools</h1>
                     </section>
@@ -788,7 +788,7 @@
 						<img src="images/IE/IE%20Performance%20Dashboard.png">
 
 					</section>
-					<section>
+					<section data-background="#115F54">
 						<h2>UI Responsiveness Tool Demo</h2>
 
 						<button id="example6Button" class="example-button">Fire Event!</button>
@@ -814,10 +814,22 @@
 						<h2>Watching events fire</h2>
 						<img src="images/Timeline/Chrome%20Timeline%20Tool.png" class="screenshot1024">
 					</section>
-					<section>
+					<section data-background="#115F54">
 						<h2>Demo</h2>
-						Use the previous demo
+
+						<button id="example7Button" class="example-button">Fire Event!</button>
+
+						<div id="example7Target"></div>
 					</section>
+					<script>
+						$(document).on('click', '#example7Button', function() {
+							var $example6Target = $('#example7Target');
+
+							for(var i = 0; i < 9999; i++) {
+								$example6Target.append('<span>' + i + '</span>');
+							}
+						})
+					</script>
 				</section>
 				<!-- Performance Tuning -->
 				<!-- read: https://developer.chrome.com/devtools/docs/timeline -->
@@ -825,7 +837,7 @@
 				<!-- screenshots: Chrome Timeline Callstack.png, Chrome Timeline Tool.png -->
                 <!-- Example of nested vertical slides -->
 
-				<section>
+				<section data-background="#33407E">
 					<h1>
 						Additional Tools
 					</h1>
@@ -836,7 +848,7 @@
 
 						<img src="images/Additional%20Tools/Glimpse/Glimpse%20SQL.png" class="screenshot1024">
 					</section>
-					<section>
+					<section data-background="#115F54">
 						<h2>Live Demo</h2>
 						<p><a href="http://play.getglimpse.com/" target="_blank">Demo</a></p>
 					</section>
@@ -852,7 +864,7 @@
 
 						<img src="images/Additional%20Tools/Fiddler/Fiddler%20Screenshot.png" class="screenshot1024">
 					</section>
-					<section>
+					<section data-background="#115F54">
 						<h2>Demo</h2>
 						<p><a href="http://www.marketwatch.com">Marketwatch.com</a></p>
 					</section>
@@ -860,10 +872,11 @@
 				<!-- Fiddler -->
 
 
-				<section>
+				<section data-background="#33407E">
 					<h1>Questions?</h1>
 				</section>
-				<section>
+
+				<section data-background="#115F54">
 					<h1>Thank You!</h1>
 					<p>
 						<small><a href="http://jaredthenerd.com">Jared Faris</a> / <a href="http://twitter.com/jaredthenerd">@jaredthenerd</a></small>
