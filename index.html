@@ -33,6 +33,7 @@
 
 		<script src="lib/js/jquery-1.11.0.min.js"></script>
 		<script src="lib/js/awesome-library.js"></script>
+		<script src="lib/js/third-party-library.js"></script>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -651,13 +652,10 @@
 					// yay for inline javascript too
 					$(document).on('click', "#example5Button", function () {
 						// we want to debug this
-						var myTest = "Hi!";
-
 						debugger;
 
-						awesome.doAwesomeStuff(); // We don't want to debug this third party library
-
-						alert(myTest);
+						thirdPartyLibrary.doStuff(awesome.doAwesomeStuff);
+						// We don't want to debug this third party library
 					});
 				</script>
 
