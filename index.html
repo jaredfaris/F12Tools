@@ -30,13 +30,13 @@
 				document.getElementsByTagName( 'head' )[0].appendChild( link );
 			}
 		</script>
-		
+
 		<script src="lib/js/jquery-1.11.0.min.js"></script>
 		<script src="lib/js/awesome-library.js"></script>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->		
+		<![endif]-->
 		<style>
 			img.screenshot1024 {
 				width: 75%;
@@ -56,10 +56,10 @@
 					<p>
 						<small>Created by <a href="http://jaredthenerd.com">Jared Faris</a> / <a href="http://twitter.com/jaredthenerd">@jaredthenerd</a></small>
 					</p>
-					
-					<aside class="notes">
-                        Brief intro. Who I am
-					</aside>
+				</section>
+
+				<section>
+					<h2>Obligatory About Me Slide</h2>
 				</section>
 
 				<section>
@@ -101,13 +101,13 @@
                         </ul>
                     </aside>
                 </section>
-                
+
             	<!-- Disable Caching -->
                 <section data-background="#33407E">
                 	<section>
                 		First things first
 						<h1>Disable Caching</h1>
-					
+
 						<aside class="notes">
 							<ul>
 								<li>If you are doing any serious debugging on the client side, cache can be killer</li>
@@ -115,37 +115,37 @@
 							</ul>
 						</aside>
                 	</section>
-                	
+
                 	<!--<section>
                 		<h2>Chrome</h2>
                 	</section>-->
-                	
+
                 	<section>
                 		<!--Chrome-->
                 		<h2>(Chrome) F12 -> F1</h2>
 						<img src="images/HTML/Disable Caching/chrome.png" class="screenshot1024">
                 	</section>
-                	
+
                 	<!--<section>
                 		<h2>Firefox</h2>
                 	</section>-->
-                	
+
                 	<section>
                 		<!--Firefox-->
                 		<h2>(Firefox) Gear -> Advanced Settings</h2>
 						<img src="images/HTML/Disable Caching/firefox.png" class="screenshot1024">
-                	</section>   
-                	
+                	</section>
+
 					<!--<section>
                 		<h2>Internet Explorer</h2>
-                	</section>-->   
-                	     
+                	</section>-->
+
                 	<section>
                 		<!--IE-->
-                		<h2>(IE) Internet Explorer</h2>
+                		<h2>(IE) Network Tool -> Always Refresh From Server</h2>
 						<img src="images/HTML/Disable Caching/internet explorer.png" class="screenshot1024">
                 	</section>
-                </section>                    
+                </section>
 
 				<section>
 					<section>
@@ -155,6 +155,10 @@
 						<h2>IE Market Share</h2>
 
 						<img src="images/browser%20market%20share.png" class="stretch">
+					</section>
+
+					<section>
+						<h2>Document Modes Are Going Away!!!</h2>
 					</section>
 
 					<section>
@@ -176,7 +180,7 @@
 
                 <section data-background="#33407E">
                 	<h1>HTML Inspection</h1>
-                	
+
                 	<aside class="notes">
                 		<ul>
                 			<li>This is the section you're probably most familiar with if you write HTML/CSS</li>
@@ -184,7 +188,7 @@
                 		</ul>
                 	</aside>
                 </section>
-                        
+
                 <section>
                 	<section>
                 		<h2>Basic manipulations</h2>
@@ -195,7 +199,7 @@
                 			<li>Edit as HTML</li>
                 		</ul>
                 	</section>
-                	
+
                 	<section data-background="#115F54">
                 		<ol>
                 			<li>1</li>
@@ -207,35 +211,36 @@
                 		</ol>
                 	</section>
                 </section>
-                <section>                	
+                <section>
                 	<section>
                 		<h2>Copying</h2>
-                		
+
                 		<ul>
                 			<li>Copy HTML (All Browsers)</li>
                 			<li>Copy XPath (ugh) (Chrome)</li>
                 			<li>Copy CSS Selector (Chrome)</li>
                 			<li>Copy Unique Selector (Firefox)</li>
+							<li>Copy With Styles (IE)</li>
                    		</ul>
-                	</section>                	
+                	</section>
                 </section>
-                
+
                 <!-- CSS Modificiations -->
                 <section data-background="#33407E">
                 	<h1>CSS Modifications</h1>
                 </section>
-                
-                
+
+
                 <!-- Tweaking designs in browser -->
                 <section>
                 	<section>
                 		<h2>Hitting Refresh Sucks</h2>
-                		
+
                 		<ul>
                 			<li>Complex, client-side workflows</li>
                 			<li>Slow data loads</li>
                 		</ul>
-                		
+
 						<aside class="notes">
 							<ul>
 								<li>Halfway through a workflow, style change, refresh, back at the start</li>
@@ -244,41 +249,41 @@
 							</ul>
 						</aside>
                 	</section>
-                	
+
                 	<section data-background="#115F54">
                 		<h2>General CSS Tweaking</h2>
-                		
+
                 		<q>
                 			Oh no, the design of this page isn't quite right. It should be two column!"
                 		</q> - Designer
-                		               	
+
                 		<!-- inline style blocks are not a best practice! -->
                 		<style>
-                			#example1ParentContainer { 
+                			#example1ParentContainer {
                 				margin-top: 10%;
                 				background-color: #eeeeee;
-                				color: #333333;	
+                				color: #333333;
                 				text-align: left;
                 				font-size: 0;
                 			}
-                			
+
                 			#example1ParentContainer div {
                 				padding: 10px;
                 				display: inline-block;
                 				font-size: 25px;
                 				/* box-sizing: border-box; */
                 			}
-                			
+
                 			#example1ParentContainer .example1ChildContainer1 {
                 				width: 75%;
                 				background-color: #666666;
                 			}
-                			
+
 							#example1ParentContainer .example1ChildContainer2 {
                 				width: 25%;
                 			}
                 		</style>
-                	
+
                 		<div id="example1ParentContainer">
                 			<div class="example1ChildContainer1">
                 				Stuff
@@ -287,69 +292,74 @@
                 				More Stuff
                 			</div>
                 		</div>
-                	
+
 						<aside class="notes">
 							<ul>
 								<li>Demo changing the box-sizing.</li>
 								<li>Then demo and explain computed/box model/etc</li>
 								<li></li>
 							</ul>
-						</aside>                	
+						</aside>
                 	</section>
-                	              	
+
                 	<section>
                 		<!--Chrome-->
                 		<h2>(Chrome) Styles</h2>
                 		<img src="images/HTML/Basic Tweaking/Chrome CSS Change.png" class="screenshot1024">
                 	</section>
-                	
+
                 	<section>
                 		<!--Firefox-->
                 		<h2>(Firefox) Rules</h2>
                 		<img src="images/HTML/Basic Tweaking/Firefox CSS Change.png" class="screenshot1024">
                 	</section>
-                	
+
                 	<section>
                 		<!--IE-->
                 		<h2>(IE) Styles</h2>
                 		<img src="images/HTML/Basic Tweaking/IE CSS Change.png" class="screenshot1024">
-                	</section> 
-                	
+                	</section>
+
                 </section>
-                <section>                  	
-                	
+                <section>
+
                 	<section>
                 		<h2>What's this computed thing?</h2>
-                		
+
                 		All the details on what an element is doing.
                 	</section>
-                	
+
                 	<section>
                 		<h2>Inherited Styles</h2>
-                		
+
                 		<img src="images/HTML/Inherited Styles/Chrome Box Sizing.png">
-                		
+
                 		<aside class="notes">
 							<ul>
 								<li>Each browser has a quick way of looking at the box model sizes</li>
 								<li>They also have a way to let you view the styles you haven't explicitly set</li>
 								<li>For each style, you can figure out where it's coming from</li>
 							</ul>
-						</aside> 
+						</aside>
                 	</section>
-                	
+
                 	<section>
                 		<h2>Inherited Styles 2</h2>
-                		
+
                 		<img src="images/HTML/Inherited Styles/Chrome Computed.png" class="screenshot1024">
-                	</section>                	
+                	</section>
                 </section>
-                
+
                 <!-- Psuedo States -->
                 <style>
                 	#example2HoverState:hover {
                 		color: red;
                 	}
+
+					#example2bAfter::after {
+						content: "shed.";
+						text-decoration: underline;
+					}
                 </style>
                 <section>
                 	<section>
@@ -361,16 +371,21 @@
 						<h2>Demo</h2>
 						<p id="example2HoverState">Change this to be highlighted</p>
 					</section>
-                	
+
+					<section data-background="#115F54">
+						<h2>Demo</h2>
+						<p id="example2bAfter">This sentence isn't fini</p>
+					</section>
+
                 	<section>
                 		<h2>(Chrome) Toggle Element State</h2>
-                	
+
                 		<img src="images/HTML/Pseudo States/Chrome Toggle State.png">
                 	</section>
 
 					<section>
 						<h2>(Firefox) States</h2>
-						
+
                 		<img src="images/HTML/Pseudo States/Firefox Toggle State.png" class="screenshot1024">
 					</section>
 
@@ -380,19 +395,19 @@
 						<img src="images/HTML/Pseudo States/IE Toggle State.png" class="screenshot1024">
                 	</section>
                 </section>
-                
+
                 <!-- What changes did I make? -->
                 <section>
                 	<section>
                 		<h2>So What Changes Did I Make Again?</h2>
                 		Firefox and IE will highlight your changes
                 	</section>
-                
+
                 	<section data-background="#115F54">
                 		<h2>Previous Demo</h2>
-                		
+
                 		<p>Firefox and IE</p>
-                		
+
                 		<div id="example1ParentContainer">
                 			<div class="example1ChildContainer1">
                 				Stuff
@@ -400,31 +415,42 @@
                 			<div class="example1ChildContainer2">
                 				More Stuff
                 			</div>
-                		</div>     
-                	</section>     
-                	
+                		</div>
+                	</section>
+
                 	<section>
                 		<h2>Firefox</h2>
                 		<p>Look for the green bar</p>
-                		
-                		<img src="images/HTML/My Changes/Firefox.png">                		
-                	</section> 
-                	
+
+                		<img src="images/HTML/My Changes/Firefox.png">
+                	</section>
+
                 	<section>
                 		<h2>IE</h2>
                 		<p>Look for the green bar</p>
-                		
+
                 		<img src="images/HTML/My Changes/IE.png" class="screenshot1024">
                 	</section>
-                	
+
                 	<section>
                 		<h2>IE Bonus Feature</h2>
                 		<p> Changes Tab!</p>
-                		
+
                 		<img src="images/HTML/My Changes/IE Changes Tab.png" class="screenshot1024">
-                	</section>                             	                 	     
+                	</section>
                 </section>
-                
+
+				<section>
+					<h2>My Preferred Workflow</h2>
+
+					<li class="fragment">Build the rough HTML/CSS statically</li>
+					<li class="fragment">Do the finishing touches in browser</li>
+					<li class="fragment">Validate across browsers</li>
+					<li class="fragment">Cut up the HTML and wire up the JS</li>
+					<li class="fragment">Validate again</li>
+
+				</section>
+
 				<!--&lt;!&ndash; Saving CSS changes&ndash;&gt;-->
 				<!--&lt;!&ndash; TODO: saving browser files, linking straight to IDE &ndash;&gt;-->
 				<!--<section>-->
@@ -443,41 +469,16 @@
 				<section data-background="#33407E">
 					<h1>JavaScript Debugging</h1>
 				</section>
-				<!-- Debugger keyword -->
-				<section>
-					<section>
-						<h2>Debugger</h2>
-					
-						Supported in all modern browsers. Code based breakpoint.
-					</section>
-					<style>
-						.example-button {
-							font-size: 1.5em;
-						};
-					</style>
-					<section data-background="#115F54">
-						<h2>Example!</h2>
-						<button id="example3Button" class="example-button">Fire Event!</button>
-					</section>
-					<script>
-						// yay for inline javascript too
-						$(document).on('click', "#example3Button", function () { 
-							// you can add a debugger breakpoint anywhere
-							debugger
-							
-							// very useful if you're trying to debug a callback
-							setTimeout(function() {
-								debugger;
-							}, 2000);
-						});					
-					</script>
-				</section>
 				<!-- Differences in the consoles -->
 				<!-- Viewing objects -->
 				<section>
 					<section>
 						<h2>Consoles</h2>
 						Run arbitrary javascript, debug it and view objects!
+					</section>
+					<section>
+						<h2>Special request</h2>
+						Go here and vote: <a href="http://bit.ly/EscapeIE" target="_blank">http://bit.ly/EscapeIE</a>
 					</section>
 					<section>
 						<!-- Chrome -->
@@ -506,7 +507,35 @@
 						<img src="images/JavaScript/Console/Internet Explorer Console.png" class="screenshot1024">
 					</section>
 				</section>
+				<!-- Debugger keyword -->
+				<section>
+					<section>
+						<h2>Debugger</h2>
 
+						Supported in all modern browsers. Code based breakpoint.
+					</section>
+					<style>
+						.example-button {
+							font-size: 1.5em;
+						};
+					</style>
+					<section data-background="#115F54">
+						<h2>Example!</h2>
+						<button id="example3Button" class="example-button">Fire Event!</button>
+					</section>
+					<script>
+						// yay for inline javascript too
+						$(document).on('click', "#example3Button", function () {
+							// you can add a debugger breakpoint anywhere
+							debugger
+
+							// very useful if you're trying to debug a callback
+							setTimeout(function() {
+								debugger;
+							}, 2000);
+						});
+					</script>
+				</section>
 				<section>
 					<!-- Callstack -->
 					<section>
@@ -565,8 +594,24 @@
 				<!-- Breaking modes -->
 				<section>
 					<section>
-						<h1>Breaking</h1>
+						<h1>Breaking on Exceptions</h1>
 					</section>
+
+					<section data-background="#115F54">
+						<h2>Exception Demo</h2>
+						<button id="example9Button" onclick="raiseAndCatchException()" class="example-button">Fire Exception</button>
+					</section>
+
+					<script>
+					function raiseAndCatchException() {
+					var element = document.createElement("div");
+						try {
+							document.body.appendChild(elemetn);
+						} catch(e) {
+							console.log(e);
+						}
+					}
+					</script>
 
 					<aside class="notes">
 						All browsers support turning on or off breaking on exceptions with some amount of customization.
