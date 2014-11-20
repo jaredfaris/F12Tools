@@ -826,10 +826,21 @@
 
 					</section>
 					<section>
-						<h2>Expand Speaker Demo</h2>
+						<h2>UI Responsiveness Tool Demo</h2>
 
-						<a href="http://clouddevelopconferenceslow.azurewebsites.net" target="_blank">Demo!</a>
+						<button id="example6Button" class="example-button">Fire Event!</button>
+
+						<div id="example6Target"></div>
 					</section>
+					<script>
+						$(document).on('click', '#example6Button', function() {
+							var $example6Target = $('#example6Target');
+
+							for(var i = 0; i < 9999; i++) {
+								$example6Target.append('<span>' + i + '</span>');
+							}
+						})
+					</script>
                 </section>
 
 				<section>
