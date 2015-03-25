@@ -52,8 +52,8 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides" >
 				<section>
-					<h1>Tune and Debug the Responsive Web</h1>
-					<h3>A Guide to F12 Debugging</h3>
+					<h1>F12</h1>
+					<h3>Tools and Tips For Tuning and Debugging the Web</h3>
 					<p>
 						<small>Created by <a href="http://jaredthenerd.com">Jared Faris</a> / <a href="http://twitter.com/jaredthenerd">@jaredthenerd</a></small>
 					</p>
@@ -69,7 +69,7 @@
 					</section>
 
 					<section>
-						<img src="images/About%20Me/avatar-beard.png">
+						<img src="images/About%20Me/avatar-goatee.png">
 					</section>
 
 					<section>
@@ -81,10 +81,10 @@
 				<section>
 					<h2>Premise</h2>
 					<ul id="aboutMeList">
-						<li class="fragment">Server-side tooling is well known</li>
-						<li class="fragment">Client-side development keeps growing</li>
+						<li class="fragment">Developers are used to great debugging on the server</li>
+						<li class="fragment">Client-side development is growing crazy fast</li>
 						<li class="fragment">There are a ton of great client-side tools</li>
-						<li class="fragment">Let's see some of them</li>
+						<li class="fragment">We're going to talk about some of them</li>
 					</ul>
 
 					<aside class="notes">
@@ -102,6 +102,7 @@
                     <h2>Today's Topics</h2>
                     <p>
                         <ul>
+							<li>Preventing Cache Headaches</li>
                         	<li>HTML Inspection</li>
                         	<li>CSS Modifications</li>
                         	<li>JavaScript Debugging</li>
@@ -121,8 +122,7 @@
             	<!-- Disable Caching -->
                 <section data-background="#33407E">
                 	<section>
-                		First things first
-						<h1>Disable Caching</h1>
+						<h1>Cache Headaches</h1>
 
 						<aside class="notes">
 							<ul>
@@ -131,6 +131,18 @@
 							</ul>
 						</aside>
                 	</section>
+
+					<section>
+						<h2>Refresh/Hard Refresh/Etc</h2>
+
+						<aside class="notes">
+							<ul>
+								<li>Refresh loads the page contents using as much of the cache as possible to speed things up. This is your normal browsing experience.</li>
+								<li>Hard refresh tells the server to ignore the cache for the next page load. However, depending on the browser and the site, things that happen asynchronously (post-load) may still be cached.</li>
+								<li>Clearing cache and reloading lets you be *really* sure you have new everything. This may or may not be helpful to you but realize there can be a difference.</li>
+							</ul>
+						</aside>
+					</section>
 
                 	<!--<section>
                 		<h2>Chrome</h2>
@@ -142,6 +154,11 @@
 						<img src="images/HTML/Disable Caching/chrome.png" class="screenshot1024">
                 	</section>
 
+					<section>
+						<h2>(Chrome) Hard Refresh</h2>
+						<img src="images/HTML/Disable Caching/chrome-refresh.png" class="screenshot1024">
+					</section>
+
                 	<!--<section>
                 		<h2>Firefox</h2>
                 	</section>-->
@@ -149,7 +166,7 @@
                 	<section>
                 		<!--Firefox-->
                 		<h2>(Firefox) Gear -> Advanced Settings</h2>
-						<img src="images/HTML/Disable Caching/firefox.png" class="screenshot1024">
+						<img src="images/HTML/Disable Caching/firefox2.png" class="screenshot1024">
                 	</section>
 
 					<!--<section>
@@ -165,7 +182,7 @@
 
 				<section>
 					<section>
-						<h1>IE You Said?</h1>
+						<h1>Browser Support</h1>
 					</section>
 					<section>
 						<h2>IE Market Share</h2>
@@ -174,7 +191,7 @@
 					</section>
 
 					<section>
-						<h2>Document Modes Are Going Away!!!</h2>
+						<h2>Project Spartan</h2>
 					</section>
 
 					<section>
