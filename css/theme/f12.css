@@ -33,6 +33,10 @@ body {
   letter-spacing: -0.02em;
   color: #eee; }
 
+.reveal section a {
+  position: static;
+}
+
 ::selection {
   color: #fff;
   background: #FF5E99;
