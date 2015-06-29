@@ -57,6 +57,9 @@
 					<p>
 						<small>Created by <a href="http://jaredthenerd.com" target="_blank">Jared Faris</a> / <a href="http://twitter.com/jaredthenerd">@jaredthenerd</a></small>
 					</p>
+
+					<p>Slides: http://f12talk.azurewebsites.net</p>
+					<p>Source: https://github.com/jaredfaris/F12Tools</p>
 				</section>
 
 				<section>
@@ -449,7 +452,7 @@
                 </section>
 
 				<section>
-					<h2>(Firefox and Windows 10 IE11) Color Picker</h2>
+					<h2>Color Picker</h2>
 				</section>
 
                 <!-- What changes did I make? -->
@@ -571,6 +574,11 @@
 						<img src="images/JavaScript/Console/Internet Explorer Console.png" class="screenshot1024">
 					</section>
 				</section>
+				<section>
+					<h2>Multi-line commands</h2>
+
+					<p>Shift + Enter</p>
+				</section>
 				<!-- Debugger keyword -->
 				<section>
 					<section>
@@ -600,6 +608,23 @@
 						});
 					</script>
 				</section>
+				<!-- console.table -->
+				<section>
+					<h2>console.table</h2>
+
+					<button id="example4Button" class="example-button">Demo</button>
+					<script>
+						$("#example4Button").on('click', function() {
+							window.TEST = [
+								{ animal: 'Horse', name: 'Henry', age: 43 },
+								{ animal: 'Dog', name: 'Fred', age: 13 },
+								{ animal: 'Cat', name: 'Frodo', age: 18 }
+							];
+							console.table(window.TEST);
+						})
+					</script>
+				</section>
+
 				<section>
 					<!-- Callstack -->
 					<section>
