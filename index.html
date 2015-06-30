@@ -612,14 +612,16 @@
 				<section>
 					<h2>console.table</h2>
 
-					<button id="example4Button" class="example-button">Demo</button>
+					<button id="consoleTableButton" class="example-button">Demo</button>
 					<script>
-						$("#example4Button").on('click', function() {
+						$("#consoleTableButton").on('click', function() {
 							window.TEST = [
 								{ animal: 'Horse', name: 'Henry', age: 43 },
 								{ animal: 'Dog', name: 'Fred', age: 13 },
 								{ animal: 'Cat', name: 'Frodo', age: 18 }
 							];
+
+							debugger;
 							console.table(window.TEST);
 						})
 					</script>
@@ -705,6 +707,22 @@
 					<aside class="notes">
 						All browsers support turning on or off breaking on exceptions with some amount of customization.
 					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>DOM Events</h2>
+
+						<p id="domEventsExampleTarget">I'm going to get deleted!</p>
+
+						<button id="domEventsExampleButton" class="example-button">Delete!</button>
+						<script>
+							$("#domEventsExampleButton").click(function() {
+								debugger;
+								$("#domEventsExampleTarget").remove();
+							});
+						</script>
+					</section>
 				</section>
 
 				<!-- Just my code (black boxing) -->
@@ -915,31 +933,31 @@
                     </section>
                 </section>
 
-                <section>
-                    <section>
-                        <h2>Actual Devices</h2>
-                    </section>
+                <!--<section>-->
+                    <!--<section>-->
+                        <!--<h2>Actual Devices</h2>-->
+                    <!--</section>-->
 
-                    <section>
-                        <h2>(Chrome) Remote Debugging</h2>
+                    <!--<section>-->
+                        <!--<h2>(Chrome) Remote Debugging</h2>-->
 
-                        <p><a href="https://developer.chrome.com/devtools/docs/remote-debugging" target="_blank">More details here.</a></p>
-                    </section>
+                        <!--<p><a href="https://developer.chrome.com/devtools/docs/remote-debugging" target="_blank">More details here.</a></p>-->
+                    <!--</section>-->
 
-                    <section>
-                        <h2>(Firefox) Valence</h2>
+                    <!--<section>-->
+                        <!--<h2>(Firefox) Valence</h2>-->
 
-                        <p><a href="https://developer.mozilla.org/en-US/docs/Tools/Valence" target="_blank">More details here.</a></p>
+                        <!--<p><a href="https://developer.mozilla.org/en-US/docs/Tools/Valence" target="_blank">More details here.</a></p>-->
 
-                        <p>Doesn't support iOS8 yet :(</p>
-                    </section>
+                        <!--<p>Doesn't support iOS8 yet :(</p>-->
+                    <!--</section>-->
 
-                    <section>
-                        <h2>More info</h2>
+                    <!--<section>-->
+                        <!--<h2>More info</h2>-->
 
-                        <p><a href="http://developer.telerik.com/featured/a-concise-guide-to-remote-debugging-on-ios-android-and-windows-phone/" target="_blank">A concise guide to remote debugging on all platforms.</a></p>
-                    </section>
-                </section>
+                        <!--<p><a href="http://developer.telerik.com/featured/a-concise-guide-to-remote-debugging-on-ios-android-and-windows-phone/" target="_blank">A concise guide to remote debugging on all platforms.</a></p>-->
+                    <!--</section>-->
+                <!--</section>-->
 
                 <section>
                     <section>
