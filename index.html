@@ -543,6 +543,29 @@
 						<h2>Consoles</h2>
 						Run arbitrary javascript, debug it and view objects!
 					</section>
+					<section data-background="#115F54">
+						<h2>Multi-line commands</h2>
+
+						<p>Shift + Enter</p>
+					</section>
+					<!-- console.table -->
+					<section data-background="#115F54">
+						<h2>console.table</h2>
+
+						<button id="consoleTableButton" class="example-button">Demo</button>
+						<script>
+							$("#consoleTableButton").on('click', function() {
+								window.TEST = [
+									{ animal: 'Horse', name: 'Henry', age: 43 },
+									{ animal: 'Dog', name: 'Fred', age: 13 },
+									{ animal: 'Cat', name: 'Frodo', age: 18 }
+								];
+
+								debugger;
+								console.table(window.TEST);
+							})
+						</script>
+					</section>
 					<!--<section>-->
 						<!--<h2>Escape key</h2>-->
 						<!--Go here and vote: <a href="http://bit.ly/EscapeIE" target="_blank">http://bit.ly/EscapeIE</a>-->
@@ -574,11 +597,6 @@
 						<img src="images/JavaScript/Console/Internet Explorer Console.png" class="screenshot1024">
 					</section>
 				</section>
-				<section>
-					<h2>Multi-line commands</h2>
-
-					<p>Shift + Enter</p>
-				</section>
 				<!-- Debugger keyword -->
 				<section>
 					<section>
@@ -586,10 +604,10 @@
 
 						Supported in all modern browsers. Code based breakpoint.
 					</section>
-					<style>
+					<style type="text/css">
 						.example-button {
 							font-size: 1.5em;
-						};
+						}
 					</style>
 					<section data-background="#115F54">
 						<h2>Example!</h2>
@@ -606,24 +624,6 @@
 								debugger;
 							}, 2000);
 						});
-					</script>
-				</section>
-				<!-- console.table -->
-				<section>
-					<h2>console.table</h2>
-
-					<button id="consoleTableButton" class="example-button">Demo</button>
-					<script>
-						$("#consoleTableButton").on('click', function() {
-							window.TEST = [
-								{ animal: 'Horse', name: 'Henry', age: 43 },
-								{ animal: 'Dog', name: 'Fred', age: 13 },
-								{ animal: 'Cat', name: 'Frodo', age: 18 }
-							];
-
-							debugger;
-							console.table(window.TEST);
-						})
 					</script>
 				</section>
 
@@ -715,7 +715,7 @@
 					</section>
 
 					<section data-background="#115F54">
-						<h2>(Chrome)DOM Events</h2>
+						<h2>(Chrome) DOM Events</h2>
 
 						<p id="domEventsExampleTarget">I'm going to get deleted!</p>
 
@@ -726,6 +726,12 @@
 								$("#domEventsExampleTarget").remove();
 							});
 						</script>
+					</section>
+
+					<section>
+						<h2>(Chrome) DOM Events</h2>
+
+						<img src="images/JavaScript/Breaking/chrome-dom-events.png">
 					</section>
 				</section>
 
