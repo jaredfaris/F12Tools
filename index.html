@@ -459,7 +459,7 @@
                 <section>
                 	<section>
                 		<h2>So What Changes Did I Make Again?</h2>
-                		Firefox and IE will highlight your changes
+                		Firefox and IE will highlight your changes. Chrome will let you save files.
                 	</section>
 
                 	<section data-background="#115F54">
@@ -1031,14 +1031,15 @@
 						<div id="example7Target"></div>
 					</section>
 					<script>
-						$(document).on('click', '#example7Button', function() {
+						document.getElementById("example7Button").addEventListener("click", window.awesome.fireTimelineDemo);
+//						$(document).on('click', '#example7Button', function() {
 //							var $example6Target = $('#example7Target');
 //
 //							for(var i = 0; i < 9999; i++) {
 //								$example6Target.append('<span>' + i + '</span>');
 //							}
-							window.awesome.fireTimelineDemo();
-						})
+//							window.awesome.fireTimelineDemo();
+//						})
 					</script>
 				</section>
 				<!-- Performance Tuning -->
