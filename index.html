@@ -58,8 +58,8 @@
 						<small>Created by <a href="http://jaredthenerd.com" target="_blank">Jared Faris</a> / <a href="http://twitter.com/jaredthenerd">@jaredthenerd</a></small>
 					</p>
 
-					<p>slides: f12talk.azurewebsites.net</p>
-					<p>source: github.com/jaredfaris/F12Tools</p>
+					<p>slides: <a href="http://f12talk-pyohio.azurewebsites.net" target="_blank">f12talk-pyohio.azurewebsites.net</a></p>
+					<p>source: <a href="http://github.com/jaredfaris/F12Tools" target="_blank">github.com/jaredfaris/F12Tools</a></p>
 				</section>
 
 				<section>
@@ -120,7 +120,7 @@
                         	<li>JavaScript Debugging</li>
                         	<li>Mobile/Responsive tools</li>
                         	<li>Performance Tuning</li>
-							<li>Crossing the Browser/Server Boundary</li>
+							<!--<li>Crossing the Browser/Server Boundary</li>-->
                         </ul>
                     </p>
 
@@ -143,9 +143,9 @@
 						<p>Consider following the various dev team blogs:</p>
 
 						<ul>
-							<li>http://blogs.msdn.com/b/ie/</li>
-							<li>https://hacks.mozilla.org/category/developer-tools/</li>
-							<li>http://blog.chromium.org/</li>
+							<li><a href="http://blogs.msdn.com/b/ie/" target="_blank">http://blogs.msdn.com/b/ie/</a></li>
+							<li><a href="https://hacks.mozilla.org/category/developer-tools/" target="_blank">https://hacks.mozilla.org/category/developer-tools/</a></li>
+							<li><a href="http://blog.chromium.org/" target="_blank">http://blog.chromium.org/</a></li>
 						</ul>
 					</section>
 				</section>
@@ -731,7 +731,6 @@
 						<button id="domEventsExampleButton" class="example-button">Delete!</button>
 						<script>
 							$("#domEventsExampleButton").click(function() {
-								debugger;
 								$("#domEventsExampleTarget").remove();
 							});
 						</script>
@@ -787,7 +786,7 @@
 				<!-- Deminifying because sometimes  you do need to look at their code -->
 				<section>
 					<section>
-						<h1>Magic Time</h1>
+						<h1>{}</h1>
 					</section>
 
 					<section data-background="#115F54">
@@ -920,7 +919,7 @@
                     </section>
 					<section data-background="#115F54">
 						<h2>Demo</h2>
-						<p>Inspect this page!</p>
+						<p><a href="http://bostonglobe.com/" target="_blank">bostonglobe.com</a></p>
 					</section>
                     <section>
                         <h2>(Chrome) Device Mode</h2>
@@ -978,6 +977,10 @@
                     <!--</section>-->
                 <!--</section>-->
 
+				<section data-background="#33407E">
+					<h1>Performance Tools</h1>
+				</section>
+
                 <section>
                     <section>
                         <h2>(IE) UI Responsiveness Tool</h2>
@@ -1001,6 +1004,11 @@
 
 						<div id="example6Target"></div>
 					</section>
+					<section>
+						<h2>Edge Performance Tab</h2>
+
+						<img src="images/IE/Edge-Performance.png">
+					</section>
 					<script>
 						$(document).on('click', '#example6Button', function() {
 							var $example6Target = $('#example6Target');
@@ -1017,10 +1025,22 @@
 						<h1>Network</h1>
 					</section>
 
+					<section data-background="#115F54">
+						<h2>AJAX demo</h2>
+
+						<p>Click <a href="http://arunranga.com/examples/access-control/simpleXSInvocation.html" target="_blank">here</a> for a demo that uses CORS.</p>
+					</section>
+
 					<section>
 						<h2>(Firefox) Edit and Resend</h2>
 
 						<img src="images/Network/firefox-edit-resend.png">
+					</section>
+
+					<section>
+						<h2>(Chrome) cURL</h2>
+
+						<img src="images/Network/chrome-curl.png" class="screenshot1024">
 					</section>
 				</section>
 
@@ -1057,26 +1077,69 @@
 				<!-- screenshots: Chrome Timeline Callstack.png, Chrome Timeline Tool.png -->
                 <!-- Example of nested vertical slides -->
 
+				<section>
+					<section>
+						<h1>Auditing</h1>
+					</section>
+
+					<section>
+						<h2>Chrome</h2>
+
+						<img src="images/Audit/Chrome%20Audit.png" class="screenshot1024">
+
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Cookies and Storage</h1>
+					</section>
+
+					<section>
+						<h2>Chrome</h2>
+
+						<img src="images/Storage/Chrome-Resources.png" class="screenshot1024">
+					</section>
+
+					<section>
+						<h2>Firefox</h2>
+						<p>Not on by default</p>
+
+						<img src="images/Storage/Firefox-Turn-On-Storage.png">
+					</section>
+
+					<section>
+						<h2>Firefox</h2>
+						<img src="images/Storage/Firefox-Storage.png" class="screenshot1024">
+					</section>
+
+					<section>
+						<h2>Edge</h2>
+
+						<img src="images/Storage/Edge-Cookies-and-Storage.png">
+					</section>
+				</section>
+
 				<section data-background="#33407E">
 					<h1>
 						Additional Tools
 					</h1>
 				</section>
-				<section>
-					<section>
-						<h2>Glimpse</h2>
+				<!--<section>-->
+					<!--<section>-->
+						<!--<h2>Glimpse</h2>-->
 
-						<img src="images/Additional%20Tools/Glimpse/Glimpse%20SQL.png" class="screenshot1024">
-					</section>
-					<section data-background="#115F54">
-						<h2>Live Demo</h2>
-						<p><a href="http://play.getglimpse.com/" target="_blank">Demo</a></p>
-					</section>
-					<section>
-						<p>Great when debugging AJAX stuff.</p>
-						<img src="images/Additional%20Tools/Glimpse/Glimpse%20AJAX.png">
-					</section>
-				</section>
+						<!--<img src="images/Additional%20Tools/Glimpse/Glimpse%20SQL.png" class="screenshot1024">-->
+					<!--</section>-->
+					<!--<section data-background="#115F54">-->
+						<!--<h2>Live Demo</h2>-->
+						<!--<p><a href="http://play.getglimpse.com/" target="_blank">Demo</a></p>-->
+					<!--</section>-->
+					<!--<section>-->
+						<!--<p>Great when debugging AJAX stuff.</p>-->
+						<!--<img src="images/Additional%20Tools/Glimpse/Glimpse%20AJAX.png">-->
+					<!--</section>-->
+				<!--</section>-->
 
 				<section>
 					<section>
@@ -1121,6 +1184,9 @@
 					<p>
 						<small><a href="http://jaredthenerd.com" target="_blank">Jared Faris</a> / <a href="http://twitter.com/jaredthenerd">@jaredthenerd</a></small>
 					</p>
+
+					<p>slides: <a href="http://f12talk-pyohio.azurewebsites.net" target="_blank">f12talk-pyohio.azurewebsites.net</a></p>
+					<p>source: <a href="http://github.com/jaredfaris/F12Tools" target="_blank">github.com/jaredfaris/F12Tools</a></p>
 				</section>
 
 
